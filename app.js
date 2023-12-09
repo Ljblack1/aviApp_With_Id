@@ -133,11 +133,21 @@ function changeColor4(target) {
 preloader3.style.display = "none";
 
 // video preloader
-const video = document.querySelector('.intro');
+const videoContainer = document.querySelector('.intro');
+const splash = document.querySelector('.splash-img');
+const video = document.querySelector('.intro-video');
+
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    splash.style.display = "none";
+    video.style.display = "flex";
+  }, 1000)
+})
 
 setTimeout(() => {
-  video.style.display = "none";
-}, 10000)
+  videoContainer.style.display = "none";
+}, 15000)
 
 function showPreloader() {
   setTimeout(() => {
