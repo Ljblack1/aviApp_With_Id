@@ -204,3 +204,9 @@ options.forEach((option) => {
 //     }, 5000)
 //   }, 5000)
 // })
+
+const tele = document.querySelector('.telegram');
+
+tele.addEventListener('click', () => {
+  location.href = "https://t.me/HackAviator1/";
+})
