@@ -147,7 +147,7 @@ window.addEventListener('load', () => {
 
 setTimeout(() => {
   videoContainer.style.display = "none";
-}, 15000)
+}, 9000)
 
 function showPreloader() {
   setTimeout(() => {
