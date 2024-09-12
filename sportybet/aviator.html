@@ -5,11 +5,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="../css/option.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
   <div class="container">
     <div class="section-center">
+
       <div class="login-container">
         <form class="login">
           <img src="../images/aviator-plane.png" alt="">
@@ -28,82 +28,72 @@
           <!-- <div class="lds-ring"><div></div><div></div><div></div><div></div></div> -->
         </form>
       </div>
+
+      <div class="add-moves-contaner">
+        <input type="text" class="add-moves-input" placeholder="Add move one">
+        <input type="text" class="add-moves-input" placeholder="Add move two">
+        <input type="text" class="add-moves-input" placeholder="Add move three">
+        <input type="text" class="add-moves-input" placeholder="Add move four">
+        <button class="add-move-btn">Push moves</button>
+        <button class="close-move-btn">Close</button>
+      </div>
+
       <!--Preloder one-->
-      
-
-      <!-- preloader -->
-      <div class="preloader" id="preloader3">
-        <div class="stars">
-          <button class="star-btn" data-id="0">
-            <i class="fa-solid fa-star"></i>
-          </button>
-          <button class="star-btn" data-id="1">
-            <i class="fa-solid fa-star"></i>
-          </button>
-          <button class="star-btn" data-id="2">
-            <i class="fa-solid fa-star"></i>
-          </button>
-          <button class="star-btn" data-id="3">
-            <i class="fa-solid fa-star"></i>
-          </button>
-          <button class="star-btn" data-id="4">
-            <i class="fa-solid fa-star"></i>
-          </button>
-        </div>
-
-        <p class="connect-site">CONNECTING TO YOUR SITE</p>
-
-        <div class="underline2"></div>
-
-        <div class="stars2">
-          <button class="star-btn" data-id="0">
-            <i class="fa-solid fa-star"></i>
-          </button>
-          <button class="star-btn" data-id="1">
-            <i class="fa-solid fa-star"></i>
-          </button>
-          <button class="star-btn" data-id="2">
-            <i class="fa-solid fa-star"></i>
-          </button>
-          <button class="star-btn" data-id="3">
-            <i class="fa-solid fa-star"></i>
-          </button>
-          <button class="star-btn" data-id="4">
-            <i class="fa-solid fa-star"></i>
-          </button>
-        </div>
+      <div class="preloader">
+        <p class="connect">Connecting...</p>
+        <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
       </div>
 
       <div class="small-load">
-        <p class="load-sig">Signal Loading</p>
+        <p>Connecting</p>
         <div class="loader-con">
           <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
-          <p>Please wait...</p>
+          <p class="pw">Please wait...</p>
         </div>
       </div>
       <!--Preloder one ends here-->
       <header class="header">
-        <p class="time">3:32 PM</p>
-        <h5>AVIATOR PREDICTOR PRO</h5>
+        <h5>Aviator Predictor v12.9.2</h5>
       </header>
 
       <section class="main-section">
-        <section class="bg-section">
-          <img class="loader" src="../images/aviator-plane.png" alt="">
+        <p class="time">
+          
+        </p>
+        <img class="top_img" src="../images/IMG_8829.PNG" alt="">
+        <div class="top-loader">
+          <img src="../images/aviatorload.png" alt="">
+        </div>
+        <section class="bg-section bg-section-one">
+          <!-- <img class="loader" src="../images/aviatorload.png" alt=""> -->
 
-          <div class="generator-container">
-            <p class="move value">0.00x</p>
+          <p class="pending">Waiting for next round</p>
+
+          <!-- <p class="move value">2.36x</p> -->
+
+          <div class="loading-bar">
+            <div class="loading-bar-fill"></div>
           </div>
+
+          <img class="aviator-plane" src="../images/aviator-plane.png" alt="">
+        </section>
+
+        <section class="bg-section bg-section-two">
+          <p class="move s-move">Server Error</p>
+          <p class="move">Please Connect To VPN</p>
         </section>
       </section>
 
       <footer class="footer-section">
         <div class="lds-ring"><div></div><div></div><div></div><div></div></div>
 
-        <button class="nxt-btn">Start</button>
+        <button class="nxt-btn">Start Game</button>
 
-        <div class="loading-bar">
-          <div class="loading-bar-fill"></div>
+        <div class="channel">
+          <p class="spribe_update">
+            Spribe update @2024.
+          </p>
+          <p>Click to join our telegram group <a href="http://t.me/HackAviator1">http://t.me/HackAviator1</a></p>
         </div>
       </footer>
     </div>
