@@ -11,6 +11,34 @@ const sLoader = document.querySelector('.small-load');
 const move = document.querySelector('.value');
 
 const loginContainer = document.querySelector('.login-container');
+const time = document.querySelector('.time');
+
+
+
+function getTime() {
+  let hours = new Date().getHours();
+  let minutes = new Date().getMinutes();
+
+  minutes < 10 ? minutes = `0${minutes}` : minutes = minutes;
+
+  if (hours > 12) {
+    hours = hours - 12;
+    return `${hours}:${minutes} PM`;
+  } else {
+    return `${hours}:${minutes} AM`;
+  }
+
+}
+
+window.addEventListener("DOMContentLoaded", () => {
+  time.textContent = getTime();
+  
+  setInterval(() => {
+    console.log(time);
+    time.textContent = getTime();
+  }, 1000)
+})
+
 
 // working on adding moves
 // const openMove = document.querySelector('.header');
@@ -108,6 +136,7 @@ btn.addEventListener("click", () => {
   setTimeout(() => {
     // btn.textContent = "Next Game";
     sLoader.style.display = "none";
+    bgWithSignal.style.marginTop = `${10}rem`;
     bgWithSignal.style.transform = `scaleY(${1.2}) translateX(${0})`;
   }, 15000)
 
